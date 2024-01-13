@@ -189,6 +189,7 @@ function register($data){
     //tambahkan data baru ke database 2 cara :
 
     // pakai variabel $query
+    
     // $query = "INSERT INTO user VALUES('','$username','$password')";
     // mysqli_query($db,$query);
 
@@ -207,8 +208,6 @@ function register($data){
 //     mysqli_query($db,"SELECT * FROM user WHERE ";
 
 // }
-
-
 ?>
 
 
