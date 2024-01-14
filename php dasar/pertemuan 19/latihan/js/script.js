@@ -1,0 +1,1 @@
+console.log('hai arinal maukah menjadi istriku');
