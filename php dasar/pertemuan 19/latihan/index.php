@@ -49,8 +49,8 @@ if (isset($_POST["cari"])) {
     <form action="" method="post">
         <br>
         <input type="text" name="keyword" size="40" autofocus placeholder="input data yang ingin dicari"
-            autocomplete="off">
-        <button type="submit" name="cari">cari !</button>
+            autocomplete="off" id="keyword">
+        <button type="submit" name="cari" id="tombol-cari">cari !</button>
 
         <!-- tombol logout -->
         <button><a href="logout.php" onclick="return confirm('Anda yakin ingin logout?');">logout</a></button>
@@ -58,6 +58,8 @@ if (isset($_POST["cari"])) {
     </form>
 
     <br>
+
+    <div id="container">
     <table border="1" cellpadding="10" cellspacing="0" align="center">
         <tr>
             <th>No.</th>
@@ -107,7 +109,7 @@ if (isset($_POST["cari"])) {
         <!-- akhir dari perulangan while -->
 
     </table>
-
+    </div>
     <script src="js/script.js"></script>
 </body>
 
