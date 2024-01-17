@@ -21,6 +21,6 @@ keyword.addEventListener("keyup", function () {
   };
 
   // eksekusi ajax
-  xhr.open("GET", "ajax/mahasiswa.php", true);
+  xhr.open("GET", "ajax/mahasiswa.php?keyword=" + keyword.value , true);
   xhr.send();
 });
