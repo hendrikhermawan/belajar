@@ -1,16 +1,16 @@
-<?php 
+<?php
 require 'function.php';
 if (isset($_POST["submit"])) {
-    
-    if (register($_POST)>0) {
-        echo 
-        "<script>
+
+    if (register($_POST) > 0) {
+        echo
+            "<script>
             alert('berhasil melakukan registrasi')
             document.location.href = 'login.php'
         </script>";
-    }else{
-    echo mysqli_error($db);
-    
+    } else {
+        echo mysqli_error($db);
+
     }
 }
 
@@ -22,12 +22,14 @@ if (isset($_POST["submit"])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>halaman registrasi</h1>
     <form action="" method="post">
@@ -47,7 +49,9 @@ if (isset($_POST["submit"])) {
             <li>
                 <button type="submit" name="submit">Register</button>
             </li>
+            
         </ul>
     </form>
 </body>
+
 </html>
